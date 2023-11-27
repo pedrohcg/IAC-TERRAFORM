@@ -1,0 +1,4 @@
+**/.terraform
+la2-plan.txt
+terraform.tfstate.backup
+**/*.pem
