@@ -1,0 +1,9 @@
+name = "permit_ssh"
+ingress_from_port = 22
+ingress_to_port = 80
+egress_from_port = 0
+egress_to_port = 65535
+ami = "ami-0a0d9cf81c479446a"
+instance_type = "t2.micro"
+key_name = "dsa-lab3"
+vm_names = ["vm-1", "vm-2", "vm-3"]
