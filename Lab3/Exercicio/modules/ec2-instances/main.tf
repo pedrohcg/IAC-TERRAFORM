@@ -17,7 +17,7 @@ resource "aws_instance" "dsa_instance" {
     }
 
     provisioner "remote-exec" {
-        inline = ["chmod +x /tmp/dsa_script.sh", "/tmp/dsa_script.sh"]
+        inline = ["chmod +x /tmp/dsa_script.sh", join(" ", ["/tmp/dsa_script.sh", var.vm_name])]
 
         connection {
             type = "ssh"

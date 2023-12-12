@@ -1,0 +1,1 @@
+aws s3 cp ../dsa_ml_app s3://dsa-pedro-bucket-2511/ --recursive
